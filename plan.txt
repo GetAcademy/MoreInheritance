@@ -5,6 +5,10 @@
    Vi tegner arvehierarki med planttext, for å forstå disse relasjonene
    Vi kan implementere noe av dette, men antar vi ikke gjør det ferdig
 
+   Når det gjelder ukeplan, har vi en typisk emne 1/emne 3-uke. Første uke er spesiell pga. 
+   oppstart og siste uke i hver modul pga. avslutning av modul/Start IT. I tillegg er 
+   første uke i emne 2 annerledes, og prosjektukene i emne 2 har sin egen stuktur.
+
 3: Stjerner med ulik oppførsel
    Et ferdig eksempel. Vi går gjennom og prøver å forstå. 
    Så kan vi eventuelt legge til noen nye varianter. 
