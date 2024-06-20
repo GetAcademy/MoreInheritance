@@ -1,11 +1,11 @@
 ﻿namespace StarsFromInterfaceToInheritance
 {
-    internal abstract class Star
+    internal class Star
     {
         protected int _column;
         protected int _row;
 
-        protected Star(int column, int row)
+        public Star(int column, int row)
         {
             _column = column;
             _row = row;
@@ -24,6 +24,8 @@
             return '*';
         }
 
-        public abstract void Update();
+        public virtual void Update()
+        {
+        }
     }
 }

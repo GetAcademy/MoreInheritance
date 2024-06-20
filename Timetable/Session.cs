@@ -7,7 +7,10 @@
         public TimeOnly End { get; }
         public string Name { get; }
 
-        public Session(string name, int startHour, int startMinute, int endHour, int endMinute, params DayOfWeek[] days)
+        public Session(string name, 
+            int startHour, int startMinute, 
+            int endHour, int endMinute, 
+            params DayOfWeek[] days)
         {
             Days = days;
             Name = name;

@@ -7,8 +7,7 @@ var stars = new Star[]
 {
     new BlinkingStar(40, 5), 
     new MovingStar(5, 10, 1, 0),
-    new BlinkingStar(10, 7), 
-    new MovingStar(15, 10, 1, 1),
+    new Star(20, 3),
 };
 
 while (true)

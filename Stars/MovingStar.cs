@@ -5,7 +5,8 @@
         private readonly int _colSpeed;
         private readonly int _rowSpeed;
 
-        public MovingStar(int column, int row,
+        public MovingStar(
+            int column, int row,
             int colSpeed, int rowSpeed)
         : base(column, row)
         {
