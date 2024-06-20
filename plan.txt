@@ -1,0 +1,8 @@
+1: TextElements (BulletPoint, CenteredHeader, Indented Paragraph og Inverted Text)
+   Skrive om fra arv til interface
+
+2: Ukeplan for Start IT som eksempel på arv
+   Vi tegner arvehierarki med planttext, for å forstå disse relasjonene
+   Vi kan implementere noe av dette, men antar vi ikke gjør det ferdig
+
+3: Stjerner med ulik oppførsel
