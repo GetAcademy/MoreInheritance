@@ -1,24 +1,23 @@
-﻿using StarsFromInterfaceToInheritance;
+﻿using System.Text;
+using StarsFromInterfaceToInheritance;
 
-StarDemo.Run();
+Console.OutputEncoding = Encoding.UTF8;
+Console.CursorVisible = false;
+var stars = new Star[]
+{
+    new BlinkingStar(40, 5), 
+    new MovingStar(5, 10, 1, 0),
+    new BlinkingStar(10, 7), 
+    new MovingStar(15, 10, 1, 1),
+};
 
-/*
- * 
- * Fra interface til arv:
- *  1: Få til samme som interface
- *     - tomme kropper
- *
- *  2: Hva mer kan vi få til? Effekt utover interface
- *     - flytte row + col - protected
- *     - arve Show
- *     - constructor-chaining
- *
- *  3: Hvordan kan vi få effektene av både arv og interface
- *     fra samme klasse
- *      - virtual = kan overrides
- *      - abstract = må overrides
- *
- *     i interface har ikke metodene kropp
- *     når vi bytter til klasse/arv, så må metodene må ha kropp
- *     MEN: abstract
- */
+while (true)
+{
+    Console.Clear();
+    foreach (var star in stars)
+    {
+        star.Show();
+        star.Update();
+    }
+    Thread.Sleep(200);
+}
