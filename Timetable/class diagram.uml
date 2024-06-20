@@ -9,17 +9,29 @@ class FirstWeek
 class LastWeekEmne1
 class LastWeekEmne2
 class LastWeekEmne3
-class ProjectIntroWeek
-class ProjectWeek
+class Emne2IntroWeek
+class Emne2Week
 
 StartItWeek <|-- NormalEmne13Week
 NormalEmne13Week <|-- FirstWeek
 NormalEmne13Week <|-- LastWeekEmne1
 NormalEmne13Week <|-- LastWeekEmne3
-ProjectWeek <|-- LastWeekEmne2
+Emne2Week <|-- LastWeekEmne2
 
-StartItWeek <|-- ProjectWeek
-StartItWeek <|-- ProjectIntroWeek
+StartItWeek <|-- Emne2Week
+StartItWeek <|-- Emne2IntroWeek
 Week <|-- StartItWeek 
+
+note right of Week 
+  En blank uke
+end note
+
+note right of StartItWeek 
+  choreier + avslutning i team
+end note
+
+note right of NormalEmne13Week 
+  undervisning 
+end note
 
 @enduml
