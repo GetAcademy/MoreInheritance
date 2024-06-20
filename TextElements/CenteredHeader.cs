@@ -1,24 +1,21 @@
 ﻿namespace TextElementsAsIntroToInterface
 {
-    internal class CenteredHeader : ITextElement
+    internal class CenteredHeader : TextElement
     {
-        private string _text;
-        private char _paddingChar;
+        private readonly string _paddedText;
 
         public CenteredHeader(string text, char paddingChar)
+        : base(text)
         {
-            _paddingChar = paddingChar;
-            _text = text;
+            var startPos = (Console.WindowWidth - text.Length) / 2;
+            var padCount = startPos - 4;
+            var padding = "  " + new string(paddingChar, padCount) + "  ";
+            _paddedText = padding + text + padding;
         }
 
-        public void Show()
+        public override void Show()
         {
-            var startPos = (Console.WindowWidth - _text.Length) / 2;
-            var padCount = startPos - 4;
-            var padding = "  " + new string(_paddingChar, padCount) + "  ";
-            Console.Write(padding);
-            Console.Write(_text);
-            Console.WriteLine(padding);
+            Console.WriteLine(_paddedText);
         }
     }
 }

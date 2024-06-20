@@ -6,3 +6,5 @@
    Vi kan implementere noe av dette, men antar vi ikke gjør det ferdig
 
 3: Stjerner med ulik oppførsel
+   Et ferdig eksempel. Vi går gjennom og prøver å forstå. 
+   Så kan vi eventuelt legge til noen nye varianter. 

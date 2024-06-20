@@ -1,6 +1,6 @@
 ﻿using TextElementsAsIntroToInterface;
 
-var textElements = new ITextElement[]
+var textElements = new TextElement[]
 {
     new CenteredHeader("Overskrift", '*'), 
     new BulletPoint("A"), 

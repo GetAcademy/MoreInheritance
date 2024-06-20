@@ -1,21 +1,18 @@
 ﻿namespace TextElementsAsIntroToInterface
 {
-    internal class InvertedText : ITextElement
+    internal class InvertedText : TextElement
     {
-        private string _text;
-
-        public InvertedText(string text)
+        public InvertedText(string text) : base(text)
         {
-            _text = text;
         }
 
-        public void Show()
+        public override void Show()
         {
             var foreColor = Console.ForegroundColor;
             var backColor = Console.BackgroundColor;
             Console.ForegroundColor = backColor;
             Console.BackgroundColor = foreColor;
-            Console.WriteLine(_text);
+            base.Show();
             Console.ForegroundColor = foreColor;
             Console.BackgroundColor = backColor;
         }
