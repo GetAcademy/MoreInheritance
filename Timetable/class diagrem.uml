@@ -1,0 +1,25 @@
+@startuml
+
+' en generell uke, uavhengig av GET Academy
+class Week 
+class StartItWeek
+' en typisk Start IT uke i emne 1 og 3
+class NormalEmne13Week 
+class FirstWeek
+class LastWeekEmne1
+class LastWeekEmne2
+class LastWeekEmne3
+class ProjectIntroWeek
+class ProjectWeek
+
+StartItWeek <|-- NormalEmne13Week
+NormalEmne13Week <|-- FirstWeek
+NormalEmne13Week <|-- LastWeekEmne1
+NormalEmne13Week <|-- LastWeekEmne3
+ProjectWeek <|-- LastWeekEmne2
+
+StartItWeek <|-- ProjectWeek
+StartItWeek <|-- ProjectIntroWeek
+Week <|-- StartItWeek 
+
+@enduml
